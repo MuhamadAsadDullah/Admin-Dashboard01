@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tabel.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+
+    <section class="sidebar">
+        <div class="menu">
+            <div class="profile">
+                <div class="gambar">
+                    <img src="assets/img-user/Logo.png" alt="">
+                </div>
+
+                <div class="nama">
+                    <p>
+                        asaddullah <br>
+                        <span>Arsip</span>
+                    </p>
+                </div>
+            </div>
+
+            <ul>
+                <p>Menu</p>
+                <a href="index.html">
+                    <li>
+                        <span class="iconify" data-icon="eva:home-outline" data-inline="false"></span>
+                        Beranda
+                    </li>
+                </a>
+                <a href="">
+                    <li class="side-active">
+                        <span class="iconify" data-icon="mdi:timetable" data-inline="false"></span>
+                        Stok Buku
+                    </li>
+                </a>
+                <a href="">
+                    <li>
+                        <span class="iconify" data-icon="bx:bx-help-circle" data-inline="false"></span>
+                        Bantuan
+                    </li>
+                </a>
+            </ul>
+
+            <ul>
+                <p>Akun</p>
+                <a href="">
+                    <li>
+                        <span class="iconify" data-icon="bx:bx-edit" data-inline="false"></span>
+                        Ubah Profil
+                    </li>
+                </a>
+                <a href="" onclick="return confirm('Anda ingin keluar?');">
+                    <li>
+                        <span class="iconify" data-icon="ic:baseline-logout" data-inline="false"></span>
+                        Keluar
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>Powered By</p>
+            <img src="assets/image/logo-semudah.png" alt="">
+            <p>Created By <a href="https://muhamadasaddullah.github.io/">M05X</a></p>
+        </div>
+    </section>
+
+    <main>
+        <section>
+        <div class="container">
+
+            <p class="title">Daftar Stok Buku</p>
+
+            <div class="navi">
+                <form action="" method="post" class="cari">
+                    <input type="text" name="keyword" class="input-cari" placeholder="Pencarian">
+                    <button type="submit" name="cari">
+                        <span class="iconify" data-icon="ph:magnifying-glass-bold" data-inline="false"></span>
+                    </button>
+                    <!-- <p class="note">*/u bulan atau tahun pilih salah satu<p> -->
+                </form>
+
+                <a href="">
+                    <button class="btn-ekspor" target="_blank">
+                        <span class="iconify" data-icon="carbon:document-export" data-inline="false"></span>
+                        Ekspor
+                    </button>
+                </a>
+            </div>
+
+            <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                    <th>No</th>
+                    <th class="">Penyunting</th>
+                    <th class="">Judul Buku</th>
+                    <th class="">Penerbit</th>
+                    <th class="">Penulis</th>
+                    <th class="">Jumlah</th>
+                    <th class="">Opsi</th>
+                    </tr>
+                </thead>
+
+                
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="">
+                            asaddullah 
+                            <br>
+                            <span>
+                                [ Arsip ]
+                            </span>
+                        </td>
+                        <td class="">Simulasi dan Komunikasi Digital - Kls 11 SMK/MAK</td>
+                        <td class="">Yudhistira</td>
+                        <td class="">Patwiyanto</td>
+                        <td class="">259</td>
+                        <td class="">
+                            <a href="" class="btn-ubah">
+                                <span class="iconify" data-icon="bx:bx-pencil" data-inline="false"></span> Ubah
+                            </a>
+
+                            <a href="" onclick="return confirm('Anda ingin menghapus data surat?');" class="btn-hapus">
+                                <span class="iconify" data-icon="akar-icons:trash-can" data-inline="false"></span> Hapus
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td class="">
+                            asaddullah 
+                            <br>
+                            <span>
+                                [ Arsip ]
+                            </span>
+                        </td>
+                        <td class="">Sejarah Indonesia - Kls 10 SMK/MAK</td>
+                        <td class="">Erlangga</td>
+                        <td class="">Ratna Hapsari & M.Adil</td>
+                        <td class="">127</td>
+                        <td class="">
+                            <a href="" class="btn-ubah">
+                                <span class="iconify" data-icon="bx:bx-pencil" data-inline="false"></span> Ubah
+                            </a>
+
+                            <a href="" onclick="return confirm('Anda ingin menghapus data surat?');" class="btn-hapus">
+                                <span class="iconify" data-icon="akar-icons:trash-can" data-inline="false"></span> Hapus
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td class="">
+                            asaddullah 
+                            <br>
+                            <span>
+                                [ Arsip ]
+                            </span>
+                        </td>
+                        <td class="">Seni Budaya - Kls 10 SMK/MAK</td>
+                        <td class="">Bumi Aksara</td>
+                        <td class="">Ikhwan Yulianda</td>
+                        <td class="">217</td>
+                        <td class="">
+                            <a href="" class="btn-ubah">
+                                <span class="iconify" data-icon="bx:bx-pencil" data-inline="false"></span> Ubah
+                            </a>
+
+                            <a href="" onclick="return confirm('Anda ingin menghapus data surat?');" class="btn-hapus">
+                                <span class="iconify" data-icon="akar-icons:trash-can" data-inline="false"></span> Hapus
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td class="">
+                            asaddullah 
+                            <br>
+                            <span>
+                                [ Arsip ]
+                            </span>
+                        </td>
+                        <td class="">Python untuk Programmer Pemula</td>
+                        <td class="">PT Elex Media Komputindo</td>
+                        <td class="">Jubilee Enterprise</td>
+                        <td class="">76</td>
+                        <td class="">
+                            <a href="" class="btn-ubah">
+                                <span class="iconify" data-icon="bx:bx-pencil" data-inline="false"></span> Ubah
+                            </a>
+
+                            <a href="" onclick="return confirm('Anda ingin menghapus data surat?');" class="btn-hapus">
+                                <span class="iconify" data-icon="akar-icons:trash-can" data-inline="false"></span> Hapus
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td class="">
+                            asaddullah 
+                            <br>
+                            <span>
+                                [ Arsip ]
+                            </span>
+                        </td>
+                        <td class="">Kamus Besar Bahasa Indonesia - Edisi Terbaru</td>
+                        <td class="">CV Cahaya Agency Surabaya</td>
+                        <td class="">Drs. Kamisa</td>
+                        <td class="">26</td>
+                        <td class="">
+                            <a href="" class="btn-ubah">
+                                <span class="iconify" data-icon="bx:bx-pencil" data-inline="false"></span> Ubah
+                            </a>
+
+                            <a href="" onclick="return confirm('Anda ingin menghapus data surat?');" class="btn-hapus">
+                                <span class="iconify" data-icon="akar-icons:trash-can" data-inline="false"></span> Hapus
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td class="">
+                            asaddullah 
+                            <br>
+                            <span>
+                                [ Arsip ]
+                            </span>
+                        </td>
+                        <td class="">Kalkulus Jilid 01 Edisi 09</td>
+                        <td class="">Erlangga</td>
+                        <td class="">Purcell</td>
+                        <td class="">42</td>
+                        <td class="">
+                            <a href="" class="btn-ubah">
+                                <span class="iconify" data-icon="bx:bx-pencil" data-inline="false"></span> Ubah
+                            </a>
+
+                            <a href="" onclick="return confirm('Anda ingin menghapus data surat?');" class="btn-hapus">
+                                <span class="iconify" data-icon="akar-icons:trash-can" data-inline="false"></span> Hapus
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td class="">
+                            asaddullah 
+                            <br>
+                            <span>
+                                [ Arsip ]
+                            </span>
+                        </td>
+                        <td class="">Teori dan Teknik Pengambilan Keputusan Kualitatif dan Kuantitatif</td>
+                        <td class="">PT Raja Grafindo Persada</td>
+                        <td class="">Irham Fahmi</td>
+                        <td class="">252</td>
+                        <td class="">
+                            <a href="" class="btn-ubah">
+                                <span class="iconify" data-icon="bx:bx-pencil" data-inline="false"></span> Ubah
+                            </a>
+
+                            <a href="" onclick="return confirm('Anda ingin menghapus data surat?');" class="btn-hapus">
+                                <span class="iconify" data-icon="akar-icons:trash-can" data-inline="false"></span> Hapus
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            
+            <div class="halaman">
+                <div class="kembali">
+                    <a href="">
+                        <span class="iconify" data-icon="eva:arrow-ios-back-fill" data-inline="false"></span>
+                    </a>
+                </div>
+                
+                <div class="no-halaman">
+                    <a href="" class="halamanaktif">1</a>
+                    <a href="">2</a>
+                </div>
+                
+                <div class="lanjut">
+                    <a href="">
+                        <span class="iconify" data-icon="eva:arrow-ios-forward-fill" data-inline="false"></span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        </section>
+    </main>
+
+</body>
+</html>
